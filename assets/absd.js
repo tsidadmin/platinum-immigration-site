@@ -43,7 +43,7 @@
   });
 
   var ref = document.getElementById("ref");
-  [1000000, 1500000, 2500000].forEach(function (p) {
+  if (ref) [1000000, 1500000, 2500000].forEach(function (p) {
     var tr = document.createElement("tr");
     tr.innerHTML = "<td>" + fmt(p) + "</td><td>" + fmt(p * 0.6) + "</td><td>" + fmt(p * 0.05) + "</td><td><strong>" + fmt(p * 0.55) + "</strong></td>";
     ref.appendChild(tr);

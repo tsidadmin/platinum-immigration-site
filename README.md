@@ -3,18 +3,15 @@
 Static campaign site for the Platinum Immigration Partner & Founder outreach campaign (Oct 2026).
 Plain HTML/CSS/JS, no build step. Hosted on GitHub Pages.
 
-## Pages
-| Page | Purpose | Campaign segment |
-|---|---|---|
-| `index.html` | Positioning, two paths (owners / partners), how we work, FAQ | All |
-| `partners.html` | Referral programme for the four partner types (anchors: `#corporate-services`, `#property`, `#hr`, `#advisers`) | 1, 2, 4, 5 |
-| `scorecard.html` | SME PR Readiness Scorecard — 10 questions, runs in the browser, nothing stored | 3 |
-| `rent-now-buy-as-pr.html` | "Rent Now, Buy as PR" ABSD comparison + calculator, printable | 2 |
+## Page
+One landing page (`index.html`) with sections: hero, owners vs partners, partner types (CSP, property, HR, advisers), SME PR Readiness Scorecard, what ICA looks at, "Rent Now, Buy as PR" ABSD calculator, client stories, FAQ, WhatsApp CTA.
+
+Logo and hero image load from platinum-immigration.com.
 
 ## Settings
 Edit the top of `assets/main.js`:
-- `bookingUrl` — where every "Book a call / profile review" button goes (currently Platinum's contact page; swap in a Calendly link when ready)
-- `partnerEmail` — set to the partnerships inbox to make partner buttons open an email instead
+- `whatsappNumber`: every CTA opens WhatsApp to Luis (+65 8268 7880)
+- `messages`: the pre-filled WhatsApp text for each CTA (general, owner, partner, property). The scorecard pre-fills the visitor's score.
 
 ## Custom domain
 1. Repo → Settings → Pages → Source: *Deploy from a branch*, `main`, `/ (root)`.
